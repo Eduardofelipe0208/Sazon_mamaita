@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La Sazón de Mamaíta - Comida criolla venezolana con un toque moderno en Caracas.">
+    <meta name="theme-color" content="#CC5500">
+    <title>La Sazón de Mamaíta | Comida con Alma</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🫓</text></svg>">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Mamaíta</a>
+            <button class="hamburger" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#historia">Nuestra Historia</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">Bienvenido a casa</span>
+            <h1 class="hero-title">Comida que te abraza el alma</h1>
+            <p class="hero-text">El sabor auténtico de Venezuela, cocinado con el amor de la abuela y servido con frescura moderna.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Ver el Menú</a>
+                <a href="#reservas" class="btn btn-secondary">Reservar Mesa</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="historia" class="section about">
+        <div class="container about-grid">
+            <div class="about-image-wrapper">
+                <img src="images/areepera.jpg" alt="Haciendo arepas a mano" class="about-img">
+                <div class="experience-badge">
+                    <span class="number">50+</span>
+                    <span class="text">Años de Tradición</span>
+                </div>
+            </div>
+            <div class="about-text">
+                <h2 class="section-title">No somos una arepera cualquiera</h2>
+                <p>Somos un restaurante de comida criolla venezolana con un toque moderno y contemporaneo. Lo que nos diferencia es la calidad y pasion en cada plato que preparamos.</p>
+                <p><strong>La Sazon de Mamaiita</strong> nace de los cuadernos de recetas de la abuela, rescatados y elevados con tecnicas modernas, pero manteniendo ese ingrediente secreto que no se compra en el mercado: el calor de hogar.</p>
+                <ul class="features-list">
+                    <li><strong>🌽 Maiz pilado fresco cada manana</strong><br>No usamos harinas industriales.</li>
+                    <li><strong>🥑 Ingredientes 100% locales y frescos</strong><br>Proveedores selectos que garantizan calidad.</li>
+                    <li><strong>❤️ Ambiente familiar y calido</strong><br>Donde cada cliente es parte de nuestra familia.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section menu">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Nuestra Carta</h2>
+                <p>Sabores que despiertan recuerdos.</p>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="todos">Todos</button>
+                <button class="tab-btn" data-category="desayunos">Desayunos</button>
+                <button class="tab-btn" data-category="almuerzos">Almuerzos</button>
+                <button class="tab-btn" data-category="bebidas">Bebidas</button>
+            </div>
+
+            <div class="menu-grid" id="menu-grid">
+                <article class="menu-item" data-category="desayunos">
+                    <div class="menu-img">
+                        <img src="images/reina.jpg" alt="Reina Pepiada">
+                        <span class="price">$5.00</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Reina Pepiada</h3>
+                        <p>La reina de la casa. Aguacate cremoso, pollo esmechado y petit pois.</p>
+                    </div>
+                </article>
+
+                <article class="menu-item" data-category="almuerzos">
+                    <div class="menu-img">
+                        <img src="images/pabellon-criollo-a-caballo.jpg" alt="Pabellón Criollo">
+                        <span class="price">$8.50</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Pabellón Criollo</h3>
+                        <p>Arroz blanco, caraotas negras refritas, tajadas de plátano maduro y carne mechada.</p>
+                    </div>
+                </article>
+
+                <article class="menu-item" data-category="almuerzos">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&auto=format&fit=crop" alt="Asado Negro">
+                        <span class="price">$12.00</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Asado Negro</h3>
+                        <p>Muchacho redondo en salsa de vino y papelón, acompañado con puré de papas rústico.</p>
+                    </div>
+                </article>
+
+                <article class="menu-item" data-category="bebidas">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=600&auto=format&fit=crop" alt="Papelón con Limón">
+                        <span class="price">$2.00</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Papelón con Limón</h3>
+                        <p>Bien frío, refrescante y con su toque cítrico perfecto.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section highlights" style="background: linear-gradient(135deg, #1a4d3e 0%, #2a7a6f 100%);">
+        <div class="container">
+            <h2 class="section-title text-center" style="color: #F5D547; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Nuestras Especialidades</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">🫓</div>
+                    <h3>Arepas Artesanales</h3>
+                    <p>Hechas a mano cada dia con maiz pilado fresco. La base de nuestra identidad culinaria.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🍲</div>
+                    <h3>Pabellón Criollo</h3>
+                    <p>El plato insignia de Venezuela. Perfecto para aquellos que quieren probar la esencia de nuestra gastronomía.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🌽</div>
+                    <h3>Ingredientes Frescos</h3>
+                    <p>Comprometidos con proveedores locales. Solo ingredientes de primera calidad en nuestros platos.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">👨‍🍳</div>
+                    <h3>Recetas de Familia</h3>
+                    <p>Heredadas de generaciones. Cada receta cuenta una historia de amor y tradición.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section gallery" style="background-color: var(--bg-color);">
+        <div class="container">
+            <h2 class="section-title text-center">Momentos Felices</h2>
+            <div class="gallery-grid">
+                <img src="images/clientefeliz.jpg" alt="Cliente feliz" class="gallery-img">
+                <img src="https://images.unsplash.com/photo-1625248442085-10a1a2563dd6?q=80&w=600&auto=format&fit=crop" alt="Tequenos" class="gallery-img">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=600&auto=format&fit=crop" alt="Ambiente" class="gallery-img">
+                <img src="images/cocina.jpg" alt="Cocina" class="gallery-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="reservas" class="section contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="section-title">Visítanos</h2>
+                    <p class="contact-desc">Ven a probar el sabor de hogar en el corazon de Caracas. Nos encantara conocerte y compartir nuestras recetas familiares.</p>
+                    
+                    <div class="info-item">
+                        <i class="icon">📍</i>
+                        <div>
+                            <h4>Ubicacion</h4>
+                            <p>Av. Principal de Las Mercedes, Caracas, Venezuela.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="icon">⏰</i>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lunes a Domingo<br><strong>7:00 AM - 9:00 PM</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="icon">📞</i>
+                        <div>
+                            <h4>Contactanos</h4>
+                            <p><strong>+58 412 093 6783</strong><br>(Llamadas y WhatsApp)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://wa.me/584120936783" class="btn btn-secondary" style="margin-left: 0;">Contáctanos por WhatsApp</a>
+                    </div>
+                </div>
+
+                <form id="reservation-form" class="reservation-form">
+                    <h3>Reserva tu Mesa</h3>
+                    <div class="form-group">
+                        <label for="name">Nombre Completo *</label>
+                        <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Tu telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Fecha *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="time">Hora *</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="people">Personas *</label>
+                            <select id="people" name="people" required>
+                                <option value="">Selecciona...</option>
+                                <option value="2">2 Personas</option>
+                                <option value="3">3 Personas</option>
+                                <option value="4">4 Personas</option>
+                                <option value="5">5 Personas</option>
+                                <option value="6">6 Personas</option>
+                                <option value="7+">Mas de 7</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Observaciones</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="Alergias, preferencias, celebración especial..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Confirmar Reserva</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>La Sazon de Mamaiita</h4>
+                    <p>Comida criolla venezolana con un toque moderno, hecha con pasion y tradicion familiar.</p>
+                    <div class="social-links-footer">
+                        <a href="#" aria-label="Instagram" class="social-icon">📱 Instagram</a>
+                        <a href="#" aria-label="TikTok" class="social-icon">🎵 TikTok</a>
+                        <a href="https://wa.me/584120936783" aria-label="WhatsApp" class="social-icon">💬 WhatsApp</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Informacion</h4>
+                    <ul>
+                        <li><strong>Direccion:</strong> Av. Principal de Las Mercedes, Caracas</li>
+                        <li><strong>Telefono:</strong> +58 412 093 6783</li>
+                        <li><strong>Email:</strong> info@mamaiita.com</li>
+                        <li><strong>Horario:</strong> Lunes a Domingo 7:00 AM - 9:00 PM</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li>Comer en el local</li>
+                        <li>Entrega a domicilio</li>
+                        <li>Eventos privados</li>
+                        <li>Catering disponible</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 La Sazon de Mamaiita. Todos los derechos reservados. | Hecho con amor por la familia Mamaiita</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/584120936783?text=Hola,%20quiero%20hacer%20un%20pedido%20en%20La%20Sazon%20de%20Mamaiita" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
